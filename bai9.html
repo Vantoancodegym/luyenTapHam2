@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let str = prompt("nhap chuoi ky tu");
+        let n = prompt("nhap ky tu can kiem tra");
+        alert(checkLetter(str,n));
+    }
+    function checkLetter(str,n){
+        let count =0;
+        for (let i=0;i<str.length;i++){
+            if (str[i]==n){
+            count++
+            }
+        }if(count==0){
+            return -1
+        }else {
+            return "ky tu "+n+ " xuat hien "+count+" lan";
+        }
+    }
+</script>
+</body>
+</html>

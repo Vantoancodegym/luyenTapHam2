@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<input type="text" id="inputArr" >
+<input type="button" onclick="main()" value="Find min">
+<p id="result"></p>
+<script>
+    function findMin(arr){
+        arr.sort(function (a,b){
+            return a-b;
+        })
+        return arr[0];
+    }
+    function main(){
+        let arr = document.getElementById('inputArr').value.split(",");
+        document.getElementById('result').innerHTML = "Min = " + findMin(arr);
+    }
+</script>
+</body>
+</html>

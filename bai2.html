@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let r = +prompt("nhap ban kinh hinh tron");
+        alert("chu vi hinh tron la: "+perimeter(r));
+        alert("dien tich hinh tron la: "+area(r));
+    }
+    function perimeter(x){
+        return 2*x*Math.PI;
+    }
+    function area(x){
+        return x*x*Math.PI;
+    }
+</script>
+</body>
+</html>

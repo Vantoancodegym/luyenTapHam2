@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let n= +prompt("nhap 1 so bat ky");
+        alert(checkNumber(n));
+    }
+    function checkNumber(n){
+        if (n>0&&n%1==0){
+            return true;
+        }else {
+            return false
+        }
+    }
+</script>
+</body>
+</html>
